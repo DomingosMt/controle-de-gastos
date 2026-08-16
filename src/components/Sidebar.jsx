@@ -7,10 +7,10 @@ import { GoGear } from "react-icons/go";
 function Sidebar() {
     return (
         <div>
-            <div>
-                <img src="" alt="" />
-                <div>
-                    <h1>Financer</h1>
+            <div className="flex flex-col">
+                    <img src="" alt="" />
+                    <div className="flex flex-col">
+                    <h1 className="">Financer</h1>
                     <h3>Conta Pessoal</h3>
                 </div>
                 <div>
