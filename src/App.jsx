@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 import Sidebar from './components/Sidebar'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import LoginPage from './pages/LoginPage'
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LoginPage/>} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
