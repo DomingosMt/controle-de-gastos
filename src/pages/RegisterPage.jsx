@@ -11,7 +11,7 @@ function RegisterPage() {
       <section className="relative flex min-h-[42vh] overflow-hidden bg-[#1f2a24] text-white lg:min-h-screen lg:w-[44%]">
         <img
           src={backgroundImage}
-          alt="imagem de escritorio"
+          alt="imagem de escritório"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/40 to-black/70" />
@@ -33,7 +33,7 @@ function RegisterPage() {
       </section>
 
       <section className="flex min-h-[58vh] items-center justify-center px-6 py-10 sm:px-10 lg:min-h-screen lg:w-[56%] lg:px-16 xl:px-24">
-        <div className="w-full max-w-[460px] space-y-8">
+        <div className="w-full max-w-115 space-y-8">
           <div className="space-y-3 text-center lg:text-left">
             <h1 className="text-3xl font-semibold text-[#1f1f1f] sm:text-4xl">
               Criar sua conta
@@ -43,7 +43,7 @@ function RegisterPage() {
             </p>
           </div>
 
-          <form className="space-y-5">
+          <form className="space-y-5" onSubmit={(event) => event.preventDefault()}>
             <label className="block space-y-2">
               <span className="flex items-center gap-2 text-sm font-medium text-[#352f28]">
                 <MdPersonOutline className="text-lg text-[#C0C8CB]" />
@@ -93,7 +93,7 @@ function RegisterPage() {
                   <IoEyeOffOutline className="text-lg" />
                 </button>
               </div>
-              <p className="text-xs text-[#6e6458]">Must be at least 8 characters</p>
+              <p className="text-xs text-[#6e6458]">Deve ter pelo menos 8 caracteres</p>
             </label>
 
             <label className="block space-y-2">
