@@ -1,8 +1,8 @@
-import { useState } from 'react'
+
 import './App.css'
-import Sidebar from './components/Sidebar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<LoginPage/>} />
+          <Route path='/RegisterPage' element={<RegisterPage/>} />
         </Routes>
       </BrowserRouter>
     </>
